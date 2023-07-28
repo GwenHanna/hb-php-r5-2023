@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    flex-basis: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+    max-width: 80%;
+    padding: 0 10px;
+    margin: auto;
+    /* background: red; */
+}
+.card{
+    max-width: 30%;
+    min-width: 200px;
+    border: 1px solid black;
+    padding: 15px;
+    /* background: green; */
+}
