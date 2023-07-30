@@ -1,0 +1,21 @@
+:root{
+    --primary : black;
+    --borderCard: 1px solid var(--primary);
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+    width: 80%;
+    margin: auto;
+}
+.card{
+    max-width: 50%;
+    min-width: 30%;
+    border: var(--borderCard);
+}
+img{
+    width: 200px;
+}
