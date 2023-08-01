@@ -59,4 +59,19 @@ Vous réfléchirez au nom de cette fonction, à sa signature, et la manière don
 Réalisez au moins une dizaine d'exemples qui démontreront le bon fonctionnement de votre fonction
 
 [Solutions](functions/roundAtHalf/)
+<<<<<<< HEAD
 >>>>>>> fa81c0efffac2c2337d1fa9d0d1de5ba1bdfc91b
+=======
+
+### Insertion dans un tableau
+
+Réaliser une fonction qui insère un élément dans un tableau. On fournira à la fonction le tableau dans lequel insérer l'élément, l'élément en question, et la position (l'index).
+
+Par exemple, si j'ai le tableau [1, 2, 3] et que je veux insérer l'élément 4 à l'index 2, je me retrouverai avec [1, 2, 4, 3].
+
+Bien sûr les index sont toujours positifs.
+On ne travaillera qu'avec des index numériques.
+Si on fournit un index plus grand que la taille du tableau, alors on proposera 2 implémentations différentes : la première renverra une erreur car l'index est en-dehors des limites, la seconde agrandira le tableau avec des éléments vides jusqu'à insérer l'élément voulu.
+
+[Solutions](functions/insertIntoArray/)
+>>>>>>> 2cec0f1dd4529fb0ad98adda5bc32f3e3d2c7004
