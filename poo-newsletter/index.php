@@ -1,16 +1,17 @@
 <?php
 
-// Initialisation email
-$email = "";
-
 if (isset($_POST['email'])) { // Formulaire soumis
   require_once 'classes/SpamChecker.php';
-  $email = $_POST['email'];
-  $checker = new SpamChecker();
+  require_once 'classes/Email.php';
+  require_once 'classes/EmailsFile.php';
+  require_once 'classes/Utils.php';
 
   try {
-    $isSpam = $checker->isSpam($email);
-  } catch (InvalidArgumentException $ex) {
+    $email = new Email($_POST['email']);
+    $emailsFile = new EmailsFile(new SpamChecker());
+    $emailsFile->add($email);
+    Utils::redirect('confirm_sub.php');
+  } catch (Exception $ex) {
     $errorMessage = $ex->getMessage();
   }
 }
@@ -37,7 +38,7 @@ if (isset($_POST['email'])) { // Formulaire soumis
 
     <form method="POST">
       <label for="email">Email :</label>
-      <input type="email" name="email" id="email" value="<?php echo $email; ?>" />
+      <input type="email" name="email" id="email" value="<?php echo $_POST['email'] ?? ""; ?>" />
 
       <button type="submit">Inscription</button>
     </form>
