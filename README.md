@@ -100,7 +100,7 @@ Réalisez un tableau de Car que vous déposerez dans un fichier PHP, puis un mot
 
 Pour l'année dans le moteur de recherche, générez une liste "select" en fonction des années qui se trouvent dans le tableau de voitures
 
-#### Atelier Newsletter
+### Atelier Newsletter
 
 [newsletter](poo-newsletter/)
 
@@ -110,4 +110,13 @@ Réaliser un petit système de newsletter :
 
 - Une page contenant un formulaire où renseigner son adresse mail
 - Développer un système qui détecte si l'adresse email est un spam ou non
+<<<<<<< HEAD
 >>>>>>> 93da12fb562ec018e74b558e9d659c9481b054e1
+=======
+
+### Héritage
+
+Produits rectangulaires et circulaires : [poo-heritage](poo-heritage/)
+
+> Objectifs : Héritage, portée `protected`, mot-clé `static` pour l'interface fluide, abstractions, polymorphisme
+>>>>>>> ca510b3da678d59c885a4be94b1e71d6d3ced6e2
