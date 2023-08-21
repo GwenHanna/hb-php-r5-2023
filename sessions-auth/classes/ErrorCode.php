@@ -6,7 +6,7 @@ class ErrorCode
   public const INVALID_CREDENTIALS = 2;
   public const LOGIN_FIELDS_REQUIRED = 3;
 
-  public static function getErrorMessage(int $errorCode): string
+  static function getErrorMessage(int $errorCode): string
   {
     switch ($errorCode) {
       case self::ADMIN_ACCESS_ERROR:

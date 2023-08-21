@@ -1,4 +1,8 @@
 <?php require_once 'layout/header.php';
+
+
+
+
 if (isset($_SESSION['login'])) {
   $welcomeMessage = "Bienvenue, " . $_SESSION['login'];
 } else {
